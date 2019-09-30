@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          # Disable createClob() error when the app starts:
+          # PostgreSQL JDBC driver does not implement this feature.
+          use_jdbc_metadata_defaults: false
+    # Generate database schema.
+    generate-ddl: true

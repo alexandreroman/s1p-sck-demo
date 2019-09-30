@@ -1,0 +1,4 @@
+spring:
+  application:
+    # Application name is used when looking up ConfigMap objects.
+    name: s1p-sck-demo
